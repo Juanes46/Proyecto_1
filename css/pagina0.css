@@ -1,0 +1,32 @@
+*{
+ margin: 0px;
+ padding: 0px;
+}
+.Menu{
+    padding: 50px 80px;
+    background-color: bisque;
+    
+}
+
+.Imagen{
+    width: 100vw;
+    height: 70vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: -50px;
+    
+}
+ 
+h1 {
+    text-align: center;
+}
+
+.Introduccion{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+body{
+
+    background-color: powderblue;
+}
