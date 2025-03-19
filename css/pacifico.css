@@ -139,7 +139,7 @@ header {
 
 .recomendation-item {  
     display: inline-block;  
-    width: 30%; /* Ajustable según tus necesidades */  
+    width: 20%; /* Ajustable según tus necesidades */  
     vertical-align: top;  
     padding: 20px -2400px;
     margin: 10px;  
@@ -148,7 +148,7 @@ header {
 }  
 
 .recomendation-item img {  
-    width: 80%; /* Controla el tamaño de la imagen */  
+    width: 20%; /* Controla el tamaño de la imagen */  
     height: auto; /* Mantiene la proporción de la imagen */  
     border-radius: 5px; /* O cualquier otro estilo que desees */  
     margin-bottom: 10px; /* Espacio entre la imagen y el texto */  
