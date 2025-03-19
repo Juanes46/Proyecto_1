@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Navbar */
+.navbar {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 30px;
+    background: transparent;
+    z-index: 10;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav-links li {
+    position: relative;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 15px;
+    display: block;
+}
+
+.nav-links li a:hover {
+    color: #FFD700; /* Efecto dorado */
+}
+
+/* Menú desplegable */
+.dropdown-menu {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.8);
+    top: 100%;
+    left: 0;
+    list-style: none;
+    padding: 0;
+    min-width: 200px;
+    border-radius: 5px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.dropdown-menu li {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.dropdown-menu li a {
+    padding: 10px 15px;
+    display: block;
+    color: white;
+    text-decoration: none;
+}
+
+.dropdown-menu li a:hover {
+    background: #FFD700;
+    color: black;
+}
+
+/* Mostrar menú desplegable al pasar el mouse */
+.dropdown:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Logo */
+.logo {
+    width: 120px; /* Ajusta el tamaño según necesidad */
+    height: auto;
+    position: absolute;
+    top: 20px; /*  Separa del borde superior */
+    left: 30px; /*  Separa del borde izquierdo */
+}
+
+/* Imagen de fondo */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 790px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: center;
+    z-index: 5;
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Ajusta la opacidad */
+    z-index: -1;
+
+}
+
+.Imagen {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -6;
+    display: block;
+}
+
+/* Texto principal */
+.content {
+    position: relative;
+    color: white;
+    text-align: center;
+    max-width: 800px;
+    padding: 20px;
+    
+}
+.content h1 {
+    font-size: 50px;
+    font-weight: 700;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
+    margin-bottom: 10px;
+}
+.content p {
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-bottom: 30px;
+}
+/* Botón de explorar */
+.explore-btn {
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    padding: 12px 24px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: background 0.3s, color 0.3s;
+    margin-top: 30px;
+}
+
+.explore-btn:hover {
+    background: white;
+    color: black;
+}
+/* Contenedor general */
+.Introduccion {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.9); /* Fondo blanco con ligera transparencia */
+    color: #333;
+    border-radius: 12px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Efecto hover */
+.Introduccion:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Sección de fondo con degradado */
+.introduccion-intro {
+    position: relative;
+    background: linear-gradient(135deg, #ff9a44, #ffcc33); /* Degradado más vibrante */
+    padding: 90px 20px;
+    color: white;
+    text-align: center;
+    border-radius: 12px;
+}
+
+/* Título con icono */
+.Introduccion h1 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* Parrafo */
+.Introduccion p {
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+/* Ícono decorativo */
+.Introduccion h1::before {
+    content: "🌎"; /* Ícono de la Tierra */
+    font-size: 26px;
+}
+
+/* Animación sutil en los textos */
+.Introduccion h1, .Introduccion p {
+    opacity: 0;
+    transform: translateY(15px);
+    animation: fadeInUp 0.8s ease-in-out forwards;
+}
+
+/* Definición de la animación */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
