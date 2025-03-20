@@ -1,65 +1,166 @@
-/* Importar tipografía moderna */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
-body {  
-    
-    font-family: Arial, sans-serif;  
-    margin: 0;  
-    padding: 0;  
-    background-color:#a7d04f
-}  
 
-body {
-    font-family: 'Poppins', sans-serif;
+/* Reset de estilos */
+* {
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
-}
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+} 
 
-/* Navbar mejorado */
-.navbar {
+body {  
+    margin: 0;
+    padding: 0;
+    background-image: url("../img/2.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}  
+
+.navbar { 
     display: flex;
     align-items: center;
     justify-content: center;
-    background: rgba(0, 0, 0, 0.6);
-    padding: 15px 40px;
-    position: fixed;
-    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 25px 40px;
     top: 0;
     left: 0;
+    width: 100%;
+    position: fixed;
     z-index: 1000;
-    backdrop-filter: blur(5px);
+    margin-top: 0;
+    
+}  
+
+.logo {  
+    height: 50px;  
+    width: 50px; 
+    height: auto;
+    position: absolute;
+    top: 8px; 
+    left: 30px; 
 }
 
-.logo {
+.nav-links {  
+    list-style: none;  
+    display: flex;  
+    margin-left: auto;  
+}  
+
+.nav-links li {  
+    position: relative;  
+}  
+
+.nav-links a {  
+    color: white;  
+    padding: 15px;  
+    text-decoration: none;  
+}  
+
+.nav-links a:hover {  
+    color: #000000;  
+}  
+
+.dropdown-menu {  
+    display: none;  
+    position: absolute;  
+    background-color: white;  
+    list-style: none;  
+    padding: 0;  
+    margin: 0;  
+    border: 1px solid #ccc;  
+}  
+
+
+.dropdown:hover .dropdown-menu {  
+    display: block;  
+    background-color: #dff466;
+    width: 100px;
+    height: auto;
+    
+    
+}  
+
+.container {  
+    width: 80%;  
+    margin: auto;  
+    
+}  
+
+header {  
+    text-align: center;  
+    margin: 20px 0;  
+    
+}  
+
+.image-form {  
+    display: flex;  
+    justify-content: space-between;  
+    margin: 20px 0; 
+    overflow: hidden; 
+}
+
+.image-form img{
+    width: 100%;
+    height:100%;
+    justify-content: center;
+    align-items: center;
+    padding: auto;
+    
+}
+
+.image {  
+    margin-top: 20px;
+    width: 60%;  
+    background-color: rgba(236, 234, 234, 0.6);  
+    text-align: center;  
+    padding: 20px;  
+}  
+
+.form {  
+    margin-top: 20px;
+    width: 35%;  
+    background-color: rgba(236, 234, 234, 0.6);  
+    padding: 10px;  
+    text-align: center;
+    justify-content: center; 
+    align-items: center;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    border: 3px solid #2ba5a5;  
+    
+
+}  
+
+.form button {
+    width: 90%;
     height: 50px;
-    position: absolute;
-    top: 10px;
-    left: 30px;
+    background-color: #2ba5a5;
+    font-size: 20px;
 }
 
 .info, .testimonials {  
     margin: 20px 0;  
-    padding: 20px;  
-    border: 1px solid #ccc; 
-    background-color: rgba(226, 111, 85, 0.83); 
+    padding: 20px;   
+    background-color: rgba(236, 234, 234, 0.6); 
 }  
 
 .recomendations {  
-    background-color: rgba(0, 0, 0, 0.2); /* Color de fondo similar a la imagen */  
-    padding: 10px;  
+    background-color: rgba(0, 0, 0, 0.5); /* Color de fondo similar a la imagen */  
+    padding: 20px;  
     margin: 20px -135px;  
-    border: 1px solid #ccc;  
     text-align: center;  
+    color: white;
 }  
 
 .recomendation-item {  
     display: inline-block;  
-    width: 20%; /* Ajustable según tus necesidades */  
+    width: 30%; /* Ajustable según tus necesidades */  
     vertical-align: top;  
     padding: 20px -2400px;
     margin: 10px;  
-    text-align: center; /* Centra el texto y las imágenes */  
+    text-align: center; /* Centra el texto y las imágenes */ 
     
 }  
 
@@ -74,6 +175,23 @@ body {
     margin: 0;  
 }  
 
-h1{
+header {  
+    text-align: center;
+    margin-top: 70px;  /* Ajustamos para compensar la altura del navbar */
+    padding-top: 20px; /* Este valor es ajustable, pero asegura que el título no quede debajo del navbar */
+}
+
+h1 {
     font-size: 40px;
+    margin-top: 0;/* Si ya tienes espacio arriba, puedes quitar este margen */
+}
+
+
+h2{
+    margin-top: 20px;
+    font-size: 17px;
+}
+
+h3 {  
+    margin-top: 0;  
 }
