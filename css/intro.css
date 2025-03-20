@@ -83,8 +83,12 @@ body {
     border-radius: 10px;
     backdrop-filter: blur(5px);
     animation: fadeIn 1.5s ease-in-out;
-    
 
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+    text-align: center;
 }
 
 .hero h1 {
@@ -96,7 +100,6 @@ body {
     font-size: 1.2rem;
 }
 
-/* Animación de aparición */
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -108,7 +111,6 @@ body {
     }
 }
 
-/* Sección Destinos */
 .destinos {
     text-align: center;
     padding: 50px 20px;

@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reseñas de Viajeros</title>
-    <link rel="stylesheet" href="../CSS/Styles.css"> <!-- Enlace a la hoja de estilos -->
+    <link rel="stylesheet" href="../css/resena.css">
 </head>
 <body>
-    <!-- Navbar -->
+
+    <!-- Barra de Navegación -->
     <header class="navbar">
         <img src="../img/logo.png" alt="Logo" class="logo">
         <nav>
@@ -17,7 +18,6 @@
                 <li class="dropdown">
                     <a href="#">Destinos ▼</a>
                     <ul class="dropdown-menu">
-
                         <li><a href="ciudad-perdida.html">Ciudad Perdida</a></li>
                         <li><a href="la-guajira.html">La Guajira</a></li>
                         <li><a href="ruta-del-vino.html">Ruta del Vino</a></li>
@@ -25,12 +25,12 @@
                         <li><a href="pacifico.html">Pacífico</a></li>
                     </ul>
                 </li>
-                <li><a href="resena.html">Reseña</a></li>
+                <li><a href="resena.html">Reseñas</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- Sección principal -->
+    <!-- Sección Hero -->
     <div class="hero-resenas">
         <div class="overlay">
             <h1>🌎 Experiencias de Viajeros</h1>
@@ -38,36 +38,42 @@
         </div>
     </div>
 
-    <!-- Sección de reseñas -->
+    <!-- Sección de Reseñas -->
     <section class="resenas">
-        <h2>📢 Opiniones de nuestros viajeros</h2>
+        <h2>Opiniones de nuestros viajeros</h2>
 
-        <div class="resena">
-            <img src="../img/user1.jpg" alt="Usuario 1">
-            <div class="texto">
-                <h3>Ana Rodríguez</h3>
+        <div class="resena-container">
+            <!-- Tarjeta de Reseña 1 -->
+            <div class="resena-card">
+                <div class="resena-header">
+                    <img src="../img/User.png" alt="Foto de Ana Rodríguez">
+                    <h3>Ana Rodríguez</h3>
+                </div>
                 <p>"Viajar a la Ciudad Perdida fue una de las mejores experiencias de mi vida. La caminata es desafiante, pero el paisaje y la cultura indígena valen totalmente la pena."</p>
-                <span>⭐⭐⭐⭐⭐</span>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
             </div>
-        </div>
 
-        <div class="resena">
-            <img src="../img/user2.jpg" alt="Usuario 2">
-            <div class="texto">
-                <h3>Carlos Méndez</h3>
+            <!-- Tarjeta de Reseña 2 -->
+            <div class="resena-card">
+                <div class="resena-header">
+                    <img src="../img/User.png" alt="Foto de Carlos Méndez">
+                    <h3>Carlos Méndez</h3>
+                </div>
                 <p>"La Ruta del Vino en Boyacá me sorprendió. No esperaba encontrar viñedos tan bonitos y vinos de tan alta calidad en Colombia. ¡Recomendado!"</p>
-                <span>⭐⭐⭐⭐</span>
+                <div class="rating">⭐⭐⭐⭐</div>
+            </div>
+
+            <!-- Tarjeta de Reseña 3 -->
+            <div class="resena-card">
+                <div class="resena-header">
+                    <img src="../img/User.png" alt="Foto de Laura Jiménez">
+                    <h3>Laura Jiménez</h3>
+                </div>
+                <p>"El avistamiento de ballenas en el Pacífico fue una experiencia mágica. Ver a estos gigantes del mar tan cerca es algo que nunca olvidaré."</p>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
             </div>
         </div>
 
-        <div class="resena">
-            <img src="../img/user3.jpg" alt="Usuario 3">
-            <div class="texto">
-                <h3>Laura Jiménez</h3>
-                <p>"El avistamiento de ballenas en el Pacífico fue una experiencia mágica. Ver a estos gigantes del mar tan cerca es algo que nunca olvidaré."</p>
-                <span>⭐⭐⭐⭐⭐</span>
-            </div>
-        </div>
     </section>
 
 </body>

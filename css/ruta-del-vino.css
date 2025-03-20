@@ -29,7 +29,80 @@ body {
     z-index: 1000;
     margin-top: 0;
     
-}  
+} 
+.navbar.scrolled {
+    background-color: rgba(0, 0, 0, 0.9); 
+    padding: 15px 40px; 
+}   
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav-links li {
+    position: relative;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 15px;
+    display: block;
+}
+
+.nav-links li a:hover {
+    color: #FFD700; /* Efecto dorado */
+}
+/* Menú desplegable */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%); /* Centra el menú con respecto al padre */
+    background: rgba(0, 0, 0, 0.8);
+    list-style: none;
+    padding: 10px 0;
+    min-width: 200px;
+    border-radius: 5px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.dropdown-menu li {
+    width: 100%;
+}
+
+.dropdown-menu li a {
+    padding: 12px 20px;
+    display: block;
+    color: white;
+    text-decoration: none;
+    transition: background 0.3s, color 0.3s;
+}
+
+.dropdown-menu li a:hover {
+    background: #FFD700;
+    color: black;
+}
+
+/* Mostrar menú desplegable al pasar el mouse */
+.dropdown:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(5px); /* Suaviza la aparición */
+}
+
 
 .logo {  
     height: 50px;  
@@ -39,47 +112,6 @@ body {
     top: 8px; 
     left: 30px; 
 }
-
-.nav-links {  
-    list-style: none;  
-    display: flex;  
-    margin-left: auto;  
-}  
-
-.nav-links li {  
-    position: relative;  
-}  
-
-.nav-links a {  
-    color: white;  
-    padding: 15px;  
-    text-decoration: none;  
-}  
-
-.nav-links a:hover {  
-    color: #000000;  
-}  
-
-.dropdown-menu {  
-    display: none;  
-    position: absolute;  
-    background-color: white;  
-    list-style: none;  
-    padding: 0;  
-    margin: 0;  
-    border: 1px solid #ccc;  
-}  
-
-
-.dropdown:hover .dropdown-menu {  
-    display: block;  
-    background-color: #eaaef2;
-    width: 100px;
-    height: auto;
-    
-    
-}  
-
 .container {  
     width: 80%;  
     margin: auto;  
