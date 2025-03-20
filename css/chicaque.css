@@ -1,29 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+} 
 
 body {  
-    font-family: Arial, sans-serif;  
-    margin: 0;  
-    padding: 0;  
-    background-color:#a7d04f
+    margin: 0;
+    padding: 0;
+    background-image: url("../img/5.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
 }  
 
-.navbar {  
-    display: flex;  
-    align-items: center;  
+.navbar { 
+    display: flex;
+    align-items: center;
     justify-content: center;
-    background-color: rgba(0, 0, 0, 0.4);  
-    padding:  20px 40px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 25px 40px;
     top: 0;
     left: 0;
-    z-index: 1000; 
-    
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+    margin-top: 0;
 }  
 
 .logo {  
     height: 50px;  
-    width: 120px; 
+    width: 50px; 
     height: auto;
     position: absolute;
-    top: 20px; 
+    top: 8px; 
     left: 30px; 
 }
 
@@ -60,7 +73,7 @@ body {
 
 .dropdown:hover .dropdown-menu {  
     display: block;  
-    background-color: #dff466;
+    background-color: #9becf7;
     width: 100px;
     height: auto;
     
@@ -96,15 +109,17 @@ header {
 }
 
 .image {  
+    margin-top: 20px;
     width: 60%;  
-    background-color: #e0e0e0;  
+    background-color: rgba(236, 234, 234, 0.6);  
     text-align: center;  
     padding: 20px;  
 }  
 
 .form {  
+    margin-top: 20px;
     width: 35%;  
-    background-color: #f0f0f0;  
+    background-color: rgba(236, 234, 234, 0.6);  
     padding: 10px;  
     text-align: center;
     justify-content: center; 
@@ -112,6 +127,7 @@ header {
     font-size: 30px;
     display: flex;
     flex-direction: column;
+    border: 3px solid #59b0c5;  
     
 
 }  
@@ -119,23 +135,22 @@ header {
 .form button {
     width: 90%;
     height: 50px;
-    background-color: #55a414;
+    background-color: #59b0c5;
     font-size: 20px;
 }
 
 .info, .testimonials {  
     margin: 20px 0;  
-    padding: 20px;  
-    border: 1px solid #ccc; 
-    background-color: rgba(226, 111, 85, 0.83); 
+    padding: 20px;   
+    background-color: rgba(236, 234, 234, 0.6); 
 }  
 
 .recomendations {  
-    background-color: rgba(0, 0, 0, 0.2); /* Color de fondo similar a la imagen */  
+    background-color: rgba(0, 0, 0, 0.5); /* Color de fondo similar a la imagen */  
     padding: 20px;  
     margin: 20px -135px;  
-    border: 1px solid #ccc;  
     text-align: center;  
+    color: white;
 }  
 
 .recomendation-item {  
@@ -144,12 +159,12 @@ header {
     vertical-align: top;  
     padding: 20px -2400px;
     margin: 10px;  
-    text-align: center; /* Centra el texto y las imágenes */  
+    text-align: center; /* Centra el texto y las imágenes */ 
     
 }  
 
 .recomendation-item img {  
-    width: 80%; /* Controla el tamaño de la imagen */  
+    width: 20%; /* Controla el tamaño de la imagen */  
     height: auto; /* Mantiene la proporción de la imagen */  
     border-radius: 5px; /* O cualquier otro estilo que desees */  
     margin-bottom: 10px; /* Espacio entre la imagen y el texto */  
@@ -159,9 +174,23 @@ header {
     margin: 0;  
 }  
 
-h1{
-    font-size: 40px;
+header {  
+    text-align: center;
+    margin-top: 70px;  /* Ajustamos para compensar la altura del navbar */
+    padding-top: 20px; /* Este valor es ajustable, pero asegura que el título no quede debajo del navbar */
 }
+
+h1 {
+    font-size: 40px;
+    margin-top: 0;/* Si ya tienes espacio arriba, puedes quitar este margen */
+}
+
+
+h2{
+    margin-top: 20px;
+    font-size: 17px;
+}
+
 h3 {  
     margin-top: 0;  
-}  
+}
