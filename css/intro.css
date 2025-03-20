@@ -23,7 +23,7 @@ body {
 }
 /* Logo */
 .logo {
-    width: 120px; /* Ajusta el tamaño según necesidad */
+    width: 50px; /* Ajusta el tamaño según necesidad */
     height: auto;
     position: absolute;
     top: 20px; /*  Separa del borde superior */
