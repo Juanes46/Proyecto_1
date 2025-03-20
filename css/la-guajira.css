@@ -87,6 +87,12 @@ body {
     
 }  
 
+header {  
+    text-align: center;  
+    margin: 20px 0;  
+    
+}  
+
 .image-form {  
     display: flex;  
     justify-content: space-between;  

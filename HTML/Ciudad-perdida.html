@@ -1,20 +1,99 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ciudad 1 </title>
-    <link rel="stylesheet" href="css/pagina1.css">
+    <title>Destinos</title>
+    <link rel="stylesheet" href="../css/Ciudad-perdida.css">
 </head>
-<body>
-    <a href="pagina0.html"><button>Pagina Principal</button></a>
-    <a href="pagina2.html"><button>Pagina 2</button></a>
-    <a href="pagina3.html"><button>Pagina 3</button></a>
-    <a href="pagina4.html"><button>Pagina 4</button></a>
-    <a href="pagina5.html"><button>Pagina 5</button></a>
+<!-- Hola -->
 
-   <div>
-    <h1>Cidudad 1</h1>
-   </div>
+
+<body>
+    
+    <!-- Navbar -->
+    <header class="navbar">
+        <img src="img/logo.png" alt="Logo" class="logo">
+        <nav>
+            <ul class="nav-links">
+                <li><a href="Index.html">Inicio</a></li>
+                <li class="dropdown">
+                    <a href="#">Destinos ▼</a>
+                    <ul class="dropdown-menu">
+
+                        <li><a href="../HTML/intro.html"> Pagina Principal </a></li>
+                        <hr>
+                        <li><a href="../HTML/intro.html">Introducción</a></li>
+                        <hr>
+                        <li><a href="../HTML/la-guajira.html">La Guajira</a></li>
+                        <hr>
+                        <li><a href="../HTML/ruta-del-vino.html">Ruta del Vino</a></li>
+                        <hr>
+                        <li><a href="../HTML/Chicaque.html">Chicaque</a></li>
+                        <hr>
+                        <li><a href="../HTML/pacifico.html">Pacífico</a></li>
+                        <hr>
+                    </ul>
+                </li>
+                <li><a href="HTML/reseña.html">Reseñas</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <header>
+            <h1>Aventura en la Ciudad Perdida</h1>
+            <b>Sierra Nevada de Santa Marta</b>
+        </header>
+
+        <div class="image-form">
+            <div class="image">
+               <img src="../img/Perdida.avif" alt="">
+            </div>
+            <div class="form">
+                <p>¿Has visitado este lugar?</p>
+                <br>
+                <button>¡Cuentanos tu experiencia!</button>
+            </div>
+        </div>
+
+        <section class="info">
+    
+            <p>
+                Conocida como Teyuna, escondida en lo profundo de la Sierra Nevada de Santa Marta, la Ciudad perdida es
+                un sitio arqueológico de la civilización Tayrona, fundada en el siglo IX para ser un importante centro
+                de comercio y espiritualidad convirtiéndose así en un lugar sagrado y de gran significado espiritual
+                para las comunidades indígenas de la región. Con el tiempo fue abandonado y cubierto por la selva, y en
+                la década de 1970, fue redescubierta por los exploradores, lo que ha hecho que hasta ahora se proteja y
+                conserve como patrimonio cultural.
+            </p>
+
+            <p>Para llegar se debe realizar un recorrido a pie de aproximadamente 44 kilómetros que suele durar entre 4
+                a 6 días, por rutas que atraviesan la selva tropical, llena de terrenos empinados y condiciones
+                climáticas variables pero que permiten al viajero observar impresionantes paisajes llenos de flora y
+                fauna única de la región; además, durante el viaje los visitantes pueden experimentar la rica herencia
+                cultural de los Tayaronas.
+
+            </p>
+        </section>
+
+        <section class="recomendations">  
+            <h3>Recomendaciones</h3>  
+            <div class="recomendation-item">  
+                <img src="../img/trekking.png">  
+                <p>Asegúrate de estar en buena <br> forma física para realizar <br> el trekking.</p>  
+            </div>  
+            <div class="recomendation-item">  
+                <img src="../img/Deportiva.png">  
+                <p>Lleva el equipo adecuado: <br> botas de trekking <br> y ropa cómoda.</p>  
+            </div>  
+            <div class="recomendation-item">  
+                <img src="../img/Guia.png">   
+                <p>Contrata guías locales <br> para asegurar tu seguridad.</p>  
+            </div>  
+        </section>
+       
+    </div>
 </body>
+
 </html>

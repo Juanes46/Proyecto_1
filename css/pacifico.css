@@ -1,0 +1,79 @@
+/* Importar tipografía moderna */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+body {  
+    
+    font-family: Arial, sans-serif;  
+    margin: 0;  
+    padding: 0;  
+    background-color:#a7d04f
+}  
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Navbar mejorado */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 15px 40px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    backdrop-filter: blur(5px);
+}
+
+.logo {
+    height: 50px;
+    position: absolute;
+    top: 10px;
+    left: 30px;
+}
+
+.info, .testimonials {  
+    margin: 20px 0;  
+    padding: 20px;  
+    border: 1px solid #ccc; 
+    background-color: rgba(226, 111, 85, 0.83); 
+}  
+
+.recomendations {  
+    background-color: rgba(0, 0, 0, 0.2); /* Color de fondo similar a la imagen */  
+    padding: 10px;  
+    margin: 20px -135px;  
+    border: 1px solid #ccc;  
+    text-align: center;  
+}  
+
+.recomendation-item {  
+    display: inline-block;  
+    width: 20%; /* Ajustable según tus necesidades */  
+    vertical-align: top;  
+    padding: 20px -2400px;
+    margin: 10px;  
+    text-align: center; /* Centra el texto y las imágenes */  
+    
+}  
+
+.recomendation-item img {  
+    width: 20%; /* Controla el tamaño de la imagen */  
+    height: auto; /* Mantiene la proporción de la imagen */  
+    border-radius: 5px; /* O cualquier otro estilo que desees */  
+    margin-bottom: 10px; /* Espacio entre la imagen y el texto */  
+}  
+
+.recomendation-item p {  
+    margin: 0;  
+}  
+
+h1{
+    font-size: 40px;
+}

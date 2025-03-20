@@ -8,19 +8,24 @@
     font-family: 'Poppins', sans-serif;
 }
 
+
 /* Navbar */
 .navbar {
-    position: absolute;
-    top: 0;
-    width: 100%;
     display: flex;
-    justify-content: center;
     align-items: center;
-    padding: 15px 30px;
-    background: transparent;
-    z-index: 10;
+    justify-content: center; 
+    background-color: rgba(0, 0, 0, 0.4); 
+    padding: 20px 40px; 
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
 }
-
+.navbar.scrolled {
+    background-color: rgba(0, 0, 0, 0.9); 
+    padding: 15px 40px; 
+}   
 .nav-links {
     display: flex;
     list-style: none;
@@ -43,31 +48,39 @@
 .nav-links li a:hover {
     color: #FFD700; /* Efecto dorado */
 }
-
 /* Menú desplegable */
+.dropdown {
+    position: relative;
+}
+
 .dropdown-menu {
     position: absolute;
-    background: rgba(0, 0, 0, 0.8);
     top: 100%;
-    left: 0;
+    left: 50%;
+    transform: translateX(-50%); /* Centra el menú con respecto al padre */
+    background: rgba(0, 0, 0, 0.8);
     list-style: none;
-    padding: 0;
+    padding: 10px 0;
     min-width: 200px;
     border-radius: 5px;
     opacity: 0;
     visibility: hidden;
-    transition: opacity 0.3s ease-in-out;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 }
 
 .dropdown-menu li {
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    width: 100%;
 }
 
 .dropdown-menu li a {
-    padding: 10px 15px;
+    padding: 12px 20px;
     display: block;
     color: white;
     text-decoration: none;
+    transition: background 0.3s, color 0.3s;
 }
 
 .dropdown-menu li a:hover {
@@ -79,11 +92,12 @@
 .dropdown:hover .dropdown-menu {
     opacity: 1;
     visibility: visible;
+    transform: translateX(-50%) translateY(5px); /* Suaviza la aparición */
 }
 
 /* Logo */
 .logo {
-    width: 120px; /* Ajusta el tamaño según necesidad */
+    width: 50px; /* Ajusta el tamaño según necesidad */
     height: auto;
     position: absolute;
     top: 20px; /*  Separa del borde superior */
@@ -126,11 +140,12 @@
 
 /* Texto principal */
 .content {
-    position: relative;
-    color: white;
+    position: absolute;
+    top: 70%; /* Ajusta este valor según lo necesites */
+    left: 50%;
+    transform: translate(-50%, -50%);
     text-align: center;
-    max-width: 800px;
-    padding: 20px;
+    color: white;
     
 }
 .content h1 {
@@ -148,6 +163,7 @@
 }
 /* Botón de explorar */
 .explore-btn {
+    position: relative;
     background: transparent;
     border: 2px solid white;
     color: white;
@@ -156,83 +172,10 @@
     cursor: pointer;
     border-radius: 30px;
     transition: background 0.3s, color 0.3s;
-    margin-top: 30px;
+    margin-top: 50bv; 
 }
 
 .explore-btn:hover {
     background: white;
     color: black;
 }
-/* Contenedor general */
-.Introduccion {
-    max-width: 900px;
-    margin: 50px auto;
-    padding: 30px;
-    background: rgba(255, 255, 255, 0.9); /* Fondo blanco con ligera transparencia */
-    color: #333;
-    border-radius: 12px;
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
-    text-align: center;
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-}
-
-/* Efecto hover */
-.Introduccion:hover {
-    transform: translateY(-5px);
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
-}
-
-/* Sección de fondo con degradado */
-.introduccion-intro {
-    position: relative;
-    background: linear-gradient(135deg, #ff9a44, #ffcc33); /* Degradado más vibrante */
-    padding: 90px 20px;
-    color: white;
-    text-align: center;
-    border-radius: 12px;
-}
-
-/* Título con icono */
-.Introduccion h1 {
-    font-size: 28px;
-    font-weight: bold;
-    margin-bottom: 15px;
-    text-transform: uppercase;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-}
-
-/* Parrafo */
-.Introduccion p {
-    font-size: 18px;
-    line-height: 1.7;
-    margin-bottom: 15px;
-}
-
-/* Ícono decorativo */
-.Introduccion h1::before {
-    content: "🌎"; /* Ícono de la Tierra */
-    font-size: 26px;
-}
-
-/* Animación sutil en los textos */
-.Introduccion h1, .Introduccion p {
-    opacity: 0;
-    transform: translateY(15px);
-    animation: fadeInUp 0.8s ease-in-out forwards;
-}
-
-/* Definición de la animación */
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(15px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
