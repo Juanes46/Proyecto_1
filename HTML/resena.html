@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Destinos</title>
     <link rel="stylesheet" href="../css/resena.css">
 </head>
-<body>     
+
+<body>
     <header class="navbar">
         <img src="../img/logo.png" alt="Logo" class="logo">
         <nav>
@@ -15,7 +17,7 @@
                 <li><a href="../Proyecto_1/HTML/intro.html">Explora</a></li>
                 <li class="dropdown">
                     <a href="#">Destinos ▼</a>
-                    <ul class="dropdown-menu">  
+                    <ul class="dropdown-menu">
                         <li><a href="../HTML/Ciudad-perdida.html">Ciudad Perdida</a></li>
                         <li><a href="../HTML/la-guajira.html">La Guajira</a></li>
                         <li><a href="../HTML/ruta-del-vino.html">Ruta del Vino</a></li>
@@ -28,6 +30,85 @@
             </ul>
         </nav>
     </header>
-   
+
+    <div class="contenedor">
+        <p class="titulo"><strong>Experiencias de Viajeros</strong></p>
+        <p class="descripcion">Descubre lo que otros aventureros han vivido en estos destinos y comparte tu propia experiencia.</p>
+    </div>
+    <section class="testimonios">
+        <h2>Testimonios de Viajeros💬 </h2>
+        <div class="contenedor-testimonios">
+            <div class="tarjeta">
+                <p class="cita"><strong>La guajira</strong> <br/> "fue un destino inolvidable, lleno de magia y cultura. ¡Volvería sin dudarlo!"</p>
+                <p class="autor">- Andrea Gómez</p>
+            </div>
+            <div class="tarjeta">
+                <p class="cita"><strong>Ruta del vino</strong> <br/> "El vino, la gente y los paisajes son espectaculares. ¡Recomendado 100%!"</p>
+                <p class="autor">- Carlos Rodríguez</p>
+            </div>
+            <div class="tarjeta">
+                <p class="cita"><strong>Ciudad Perdida</strong> <br/> "Viajar aquí fue una de las mejores experiencias de mi vida. ¡Simplemente hermoso!"</p>
+                <p class="autor">- Sofía Martínez</p>
+            </div>
+        </div>
+    </section>
+    <section class="valoraciones">
+        <h2>Valoraciones de Viajeros🌟 </h2>
+        <p>Descubre las calificaciones y opiniones de quienes han visitado estos destinos.</p>
+        
+        <div class="contenedor-valoraciones">
+            <div class="tarjeta-valoracion">
+                <h3>📍 La Guajira</h3>
+                <p class="estrellas">⭐⭐⭐⭐⭐</p>
+                <p class="comentario">"Un destino mágico lleno de paisajes inolvidables. ¡Recomendado al 100%!"</p>
+                <p class="autor">- Andrea Gómez</p>
+            </div>
+
+            <div class="tarjeta-valoracion">
+                <h3>🍷 Ruta del Vino</h3>
+                <p class="estrellas">⭐⭐⭐⭐</p>
+                <p class="comentario">"Una experiencia única con catas de vinos exquisitos y paisajes espectaculares."</p>
+                <p class="autor">- Carlos Rodríguez</p>
+            </div>
+
+            <div class="tarjeta-valoracion">
+                <h3>🏕️ Ciudad Perdida</h3>
+                <p class="estrellas">⭐⭐⭐⭐⭐</p>
+                <p class="comentario">"Un lugar lleno de historia y naturaleza, una de las mejores aventuras de mi vida."</p>
+                <p class="autor">- Sofía Martínez</p>
+            </div>
+        </div>
+    </section>
+    <section class="opinion">
+        <h2>Escribe tu Opinión✍️</h2>
+        <p>Comparte tu experiencia y ayuda a otros viajeros a descubrir nuevos destinos.</p>
+
+        <form class="formulario-opinion">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="correo">Correo electrónico:</label>
+            <input type="email" id="correo" name="correo" required>
+
+            <label for="calificacion">Calificación:</label>
+            <select id="calificacion" name="calificacion" required>
+                <option value="5">⭐⭐⭐⭐⭐ - Excelente</option>
+                <option value="4">⭐⭐⭐⭐ - Muy bueno</option>
+                <option value="3">⭐⭐⭐ - Bueno</option>
+                <option value="2">⭐⭐ - Regular</option>
+                <option value="1">⭐ - Malo</option>
+            </select>
+
+            <label for="comentario">Comentario:</label>
+            <textarea id="comentario" name="comentario" rows="4" required></textarea>
+
+            <button type="submit">Enviar Opinión</button>
+        </form>
+    </section>
+
+
+
+
 </body>
+
 </html>

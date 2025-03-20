@@ -5,19 +5,31 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-}
-.navbar {
+} 
+
+body {  
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-color: #f4f4f4;
+}  
+
+.navbar { 
     display: flex;
     align-items: center;
-    justify-content: center; 
-    background-color: rgba(0, 0, 0, 0.4); 
-    padding: 20px 40px; 
-    width: 100%;
-    position: fixed;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 45px 40px;
     top: 0;
     left: 0;
+    width: 100%;
+    position: fixed;
     z-index: 1000;
-}
+    margin-top: 0;
+    
+}  
 .navbar.scrolled {
     background-color: rgba(0, 0, 0, 0.9); 
     padding: 15px 40px; 
@@ -35,7 +47,7 @@
 .nav-links li a {
     color: white;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 28px;
     font-weight: bold;
     padding: 10px 15px;
     display: block;
@@ -82,17 +94,218 @@
     background: #FFD700;
     color: black;
 }
-
 .dropdown:hover .dropdown-menu {
     opacity: 1;
     visibility: visible;
     transform: translateX(-50%) translateY(5px); 
 }
 
-.logo {
-    width: 50px; 
+.logo {  
+    height: 50px;  
+    width: 78px; 
     height: auto;
     position: absolute;
-    top: 20px; 
-    left: 30px; 
+    top: 10px; 
+    left: 40px; 
 }
+
+.container {  
+    width: 80%;  
+    margin: auto;  
+    
+} 
+.contenedor {
+    text-align: center;
+    margin-top: 50px;
+    font-family: Arial, sans-serif;
+}
+
+.titulo {
+    font-weight: bold;
+    margin-top: 180px; 
+    text-align: center; 
+    font-size: 50px;
+}
+
+.descripcion {
+    margin-top: 15px;
+    font-size: 20px;
+    margin-block-end: 60px;
+} 
+.testimonios { 
+    text-align: center;
+    padding: 50px 20px;
+    background: rgba(255, 255, 255, 0.2)
+    color: white;
+    width: 80%;  
+    margin: 40px auto;  
+    border-radius: 20px; 
+}
+
+.testimonios h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.contenedor-testimonios {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.tarjeta {
+    background: white;
+    color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.tarjeta:hover {
+    transform: scale(1.05);
+}
+
+.cita {
+    font-style: italic;
+    font-size: 16px;
+}
+
+.autor {
+    font-weight: bold;
+    margin-top: 10px;
+    color: #ff7e5f;
+}
+
+.valoraciones {
+    text-align: center;
+    padding: 50px 20px;
+    background: rgba(0, 0, 0, 0.2);
+    color: white;
+    width: 80%;
+    margin: 40px auto;
+    border-radius: 20px;
+}
+
+.valoraciones h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.valoraciones p {
+    font-size: 16px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.contenedor-valoraciones {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.tarjeta-valoracion {
+    background: white;
+    color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 280px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.tarjeta-valoracion:hover {
+    transform: scale(1.05);
+}
+
+.estrellas {
+    font-size: 20px;
+    color: #FFD700; /* Color dorado para las estrellas */
+}
+
+.comentario {
+    font-style: italic;
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+.autor {
+    font-weight: bold;
+    color: #2193b0;
+}
+.opinion {
+    text-align: center;
+    padding: 50px 20px;
+    background:  rgba(0, 0, 0, 0.7);
+    color: white;
+    width: 80%;
+    margin: 40px auto;
+    border-radius: 20px;
+}
+
+.opinion h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.opinion p {
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+.formulario-opinion {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow:rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.formulario-opinion label {
+    display: block;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #555;
+}
+
+.formulario-opinion input,
+.formulario-opinion select,
+.formulario-opinion textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.formulario-opinion textarea {
+    resize: vertical;
+}
+
+button {
+    background-color: #FFD700;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 15px;
+    width: 100%;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #e65c50;
+}
+
