@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
-/* Reset de estilos */
 * {
     margin: 0;
     padding: 0;
@@ -54,9 +53,8 @@ body {
 }
 
 .nav-links li a:hover {
-    color: #FFD700; /* Efecto dorado */
+    color: #FFD700; 
 }
-/* Menú desplegable */
 .dropdown {
     position: relative;
 }
@@ -65,7 +63,7 @@ body {
     position: absolute;
     top: 100%;
     left: 50%;
-    transform: translateX(-50%); /* Centra el menú con respecto al padre */
+    transform: translateX(-50%); 
     background: rgba(0, 0, 0, 0.8);
     list-style: none;
     padding: 10px 0;
@@ -96,11 +94,10 @@ body {
     color: black;
 }
 
-/* Mostrar menú desplegable al pasar el mouse */
 .dropdown:hover .dropdown-menu {
     opacity: 1;
     visibility: visible;
-    transform: translateX(-50%) translateY(5px); /* Suaviza la aparición */
+    transform: translateX(-50%) translateY(5px);
 }
 
 
@@ -159,7 +156,7 @@ header {
     font-size: 30px;
     display: flex;
     flex-direction: column;
-    border: 3px solid #59b0c5;  
+    border: 3px solid #c79324;  
     
 
 }  
@@ -167,7 +164,7 @@ header {
 .form button {
     width: 90%;
     height: 50px;
-    background-color: #59b0c5;
+    background-color: #c79324;
     font-size: 20px;
 }
 
@@ -178,7 +175,7 @@ header {
 }  
 
 .recomendations {  
-    background-color: rgba(0, 0, 0, 0.5); /* Color de fondo similar a la imagen */  
+    background-color: rgba(0, 0, 0, 0.5); 
     padding: 20px;  
     margin: 20px -135px;  
     text-align: center;  
@@ -187,19 +184,19 @@ header {
 
 .recomendation-item {  
     display: inline-block;  
-    width: 30%; /* Ajustable según tus necesidades */  
+    width: 30%;  
     vertical-align: top;  
     padding: 20px -2400px;
     margin: 10px;  
-    text-align: center; /* Centra el texto y las imágenes */ 
+    text-align: center; 
     
 }  
 
 .recomendation-item img {  
-    width: 20%; /* Controla el tamaño de la imagen */  
-    height: auto; /* Mantiene la proporción de la imagen */  
-    border-radius: 5px; /* O cualquier otro estilo que desees */  
-    margin-bottom: 10px; /* Espacio entre la imagen y el texto */  
+    width: 20%;   
+    height: auto;  
+    border-radius: 5px;   
+    margin-bottom: 10px;  
 }  
 
 .recomendation-item p {  
@@ -208,13 +205,13 @@ header {
 
 header {  
     text-align: center;
-    margin-top: 70px;  /* Ajustamos para compensar la altura del navbar */
-    padding-top: 20px; /* Este valor es ajustable, pero asegura que el título no quede debajo del navbar */
+    margin-top: 70px;  
+    padding-top: 20px; 
 }
 
 h1 {
     font-size: 40px;
-    margin-top: 0;/* Si ya tienes espacio arriba, puedes quitar este margen */
+    margin-top: 0;
 }
 
 

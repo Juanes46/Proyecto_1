@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
 
-/* Reset de estilos */
 * {
     margin: 0;
     padding: 0;
@@ -174,7 +173,7 @@ header {
 }  
 
 .recomendations {  
-    background-color: rgba(0, 0, 0, 0.5); /* Color de fondo similar a la imagen */  
+    background-color: rgba(0, 0, 0, 0.5);  
     padding: 20px;  
     margin: 20px -135px;  
     text-align: center;  
@@ -183,19 +182,19 @@ header {
 
 .recomendation-item {  
     display: inline-block;  
-    width: 30%; /* Ajustable según tus necesidades */  
+    width: 30%;  
     vertical-align: top;  
     padding: 20px -2400px;
     margin: 10px;  
-    text-align: center; /* Centra el texto y las imágenes */ 
+    text-align: center; 
     
 }  
 
 .recomendation-item img {  
-    width: 20%; /* Controla el tamaño de la imagen */  
-    height: auto; /* Mantiene la proporción de la imagen */  
-    border-radius: 5px; /* O cualquier otro estilo que desees */  
-    margin-bottom: 10px; /* Espacio entre la imagen y el texto */  
+    width: 20%; 
+    height: auto;  
+    border-radius: 5px; 
+    margin-bottom: 10px;  
 }  
 
 .recomendation-item p {  
@@ -204,13 +203,13 @@ header {
 
 header {  
     text-align: center;
-    margin-top: 70px;  /* Ajustamos para compensar la altura del navbar */
-    padding-top: 20px; /* Este valor es ajustable, pero asegura que el título no quede debajo del navbar */
+    margin-top: 70px;  
+    padding-top: 20px; 
 }
 
 h1 {
     font-size: 40px;
-    margin-top: 0;/* Si ya tienes espacio arriba, puedes quitar este margen */
+    margin-top: 0;
 }
 
 
